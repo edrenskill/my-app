@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.header-logo-nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #e60000;
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-buttons button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.header-buttons button.login {
+  border: 2px solid #e60000;
+  color: #fff;
+  background-color: transparent;
+}
+
+.header-buttons button.join-now {
+  border: none;
+  background-color: #e60000;
+  color: #fff;
+}
+
+.social-icons,
+.search-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons img,
+.search-icon img {
+  width: 20px;
+  height: 20px;
+}
+/* Footer Styles */
+.footer {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #000000;
+  border-radius: 2px;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #e60000;
+  margin-bottom: 10px;
+}
+
+.footer p.copyright {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section:not(:last-child) {
+  border-right: 1px solid #555;
+  padding-right: 20px;
+}
+
+.footer-section.nav1 a,
+.footer-section.nav2 a {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e60000;
+  text-decoration: none;
+}
+
+.footer-section.about {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-section.about h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  background: #ffc653;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .line {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin: 20px 0;
+}
+
+.footer-center {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .header h1,
+  .footer h1 {
+    font-size: 24px;
+  }
+
+  .footer p.copyright,
+  .footer-section.nav1 a,
+  .footer-section.nav2 a,
+  .footer-section.about,
+  .footer-section.about h2,
+  .footer-center {
+    font-size: 14px;
+  }
+
+  .footer-section {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+/* upcoming */
+
+.upcoming-videos {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.upcoming-videos h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #e60000;
+  text-align: center;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.video-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.video-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.video-card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .upcoming-videos h2 {
+    font-size: 20px;
+  }
+
+  .video-card h3 {
+    font-size: 18px;
+  }
+
+  .video-card p {
+    font-size: 14px;
+  }
+}
